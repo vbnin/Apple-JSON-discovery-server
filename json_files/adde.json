@@ -2,7 +2,7 @@
   "Servers": [
     {
       "Version": "mdm-adde",
-      "BaseURL": "https://you_mdm_url.com/servicediscoveryenrollment/v1/deviceenroll"
+      "BaseURL": "https://your_mdm_url.com/servicediscoveryenrollment/v1/deviceenroll"
     }
   ]
 }
