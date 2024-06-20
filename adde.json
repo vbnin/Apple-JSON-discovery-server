@@ -1,0 +1,8 @@
+{
+  "Servers": [
+    {
+      "Version": "mdm-adde",
+      "BaseURL": "https://example.com/servicediscoveryenrollment/v1/deviceenroll"
+    }
+  ]
+}
