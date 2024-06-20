@@ -2,7 +2,7 @@
   "Servers": [
     {
       "Version": "mdm-byod",
-      "BaseURL": "https://example.com/servicediscoveryenrollment/v1/userenroll"
+      "BaseURL": "https://your_mdm_url.com/servicediscoveryenrollment/v1/userenroll"
     }
   ]
 }
