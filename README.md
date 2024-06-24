@@ -1,6 +1,7 @@
 # Apple JSON Discovery Server Setup Guide
 
-This guide will help you prepare a Linux machine to run Apache web server and set up a JSON Discovery Server for account-driven enrollment workflows using the files from this [GitHub project](https://github.com/vbnin/Apple-JSON-discovery-server).
+This guide will help you prepare a Linux machine to set up a JSON Discovery Server for account-driven enrollment workflows using Apache and the files from this [GitHub project](https://github.com/vbnin/Apple-JSON-discovery-server).
+
 This guide is a proof of concept to showcase how Apple devices can be enrolled using the account-driven enrollment method. You should adapt it to your own environment.
 
 ## Prerequisites
@@ -142,6 +143,6 @@ You have successfully set up the Apache web server and configured it to serve th
 
 **Looking for a free, cloud-hosted Linux VM to host this JSON discovery server?** This configuration has been tested on a Google Cloud Free Tier e2-micro instance. 
 
- - More information on how Google Cloud Free Tier offer [here](https://cloud.google.com/free/docs/free-cloud-features#compute).
+ - [Google Cloud Free Tier offer](https://cloud.google.com/free/docs/free-cloud-features#compute).
  - [How to run a basic Apache server using a Google Cloud VM](https://cloud.google.com/compute/docs/tutorials/basic-webserver-apache)
  - [Configure static external IP addresses for Google Cloud VMs](https://cloud.google.com/compute/docs/ip-addresses/configure-static-external-ip-address#configure)
