@@ -35,6 +35,12 @@ Install Apache, Git, Certbot, and the Certbot Apache plugin:
 sudo apt install -y apache2 git certbot python3-certbot-apache
 ```
 
+Ensure your OS firewall allows HTTP and HTTPS connections for Apache using the UFW command:
+
+```
+sudo ufw allow 'Apache Full'
+```
+
 
 ## Step 3: Enable Apache Modules
 
