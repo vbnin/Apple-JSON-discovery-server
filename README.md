@@ -86,6 +86,15 @@ Find the `ServerName` directive and update it with your domain name:
 ServerName your-domain.com
 ```
 
+Review and modify if needed the rewrite rules (lines 31 to 47) configured to enable either account-driven device enrollment (ADDE) or account-driven user enrollment (ADUE) depending on the device's model family included as a query parameter. More details on query parameters [here](https://developer.apple.com/documentation/devicemanagement/discover_authentication_servers).
+
+Example below for the "iPhone" model family, configured to follow the ADUE method through the byod.json file:
+
+```
+RewriteCond %{QUERY_STRING} model-family=iPhone
+RewriteRule ^/.well-known/com.apple.remotemanagement$ /var/www/html/json_files/byod.json [L]
+```
+
 Save and close the file.
 
 
