@@ -146,6 +146,8 @@ Verify that you obtain different data depending on the device type specified as 
 
 ```
 curl https://your-domain.com/.well-known/com.apple.remotemanagement?model-family=Mac
+```
+```
 curl https://your-domain.com/.well-known/com.apple.remotemanagement?model-family=iPhone
 ```
 
