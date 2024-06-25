@@ -133,7 +133,7 @@ Restart Apache to apply all changes:
 sudo systemctl restart apache2
 ```
 
-Test access to your webserver using curl to verify that the setup is correct and the JSON files are accessible:
+Test access to your webserver from your local computer using curl to verify that the setup is correct and the JSON files are accessible:
 
 ```
 curl -I https://your-domain.com/.well-known/com.apple.remotemanagement
