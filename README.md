@@ -67,8 +67,7 @@ Move the `default-ssl.conf` file and JSON files to their appropriate locations:
 
 ```
 sudo mv /tmp/example-config/default-ssl.conf /etc/apache2/sites-available/
-sudo mkdir /var/www/html
-sudo mv -r /tmp/example-config/json_files /var/www/html/
+sudo mv /tmp/example-config/json_files /var/www/html/
 ```
 
 
