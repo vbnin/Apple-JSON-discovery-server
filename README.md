@@ -19,11 +19,10 @@ If it hasn't already been done, create a DNS redirection from your registered do
 
 ## Step 1: Prepare the OS
 
-First, update your package lists and upgrade your installed packages:
+First, downloads the latest package lists from the repositories:
 
 ```
-sudo apt update
-sudo apt upgrade -y
+sudo apt update -y
 ```
 
 
