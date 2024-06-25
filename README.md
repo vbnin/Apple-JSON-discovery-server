@@ -67,7 +67,8 @@ Move the `default-ssl.conf` file and JSON files to their appropriate locations:
 
 ```
 sudo mv /tmp/example-config/default-ssl.conf /etc/apache2/sites-available/
-sudo mv -r /tmp/example-config/json-files /var/www/html/
+sudo mkdir /var/www/html
+sudo mv -r /tmp/example-config/json_files /var/www/html/
 ```
 
 
@@ -102,7 +103,7 @@ Save and close the file.
 Edit both `adde.json` and `byod.json` files to add your MDM server URL. Open the file in a text editor:
 
 ```
-sudo nano /var/www/html/json-files/adde.json
+sudo nano /var/www/html/json_files/adde.json
 ```
 
 Find the `BaseURL` key and update it with your MDM URL:
