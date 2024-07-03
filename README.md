@@ -4,9 +4,8 @@ Apple's account-driven enrollment is a streamlined process that simplifies the s
 
 By utilizing Managed Apple IDs (or Accounts as Apple call them now), organizations can automate the enrollment of devices into their mobile device management (MDM) system. This process can be either used to enroll institutional devices (Account-driven DEVICE enrollment or ADDE) or to enroll personally owned devices (Account-driven USER enrollment or ADUE). 
 
-As of today, Apple is heavily pushing towards ADUE for any Bring Your Own Device (BYOD) enrollment workflows.
 
-Here’s why you should consider implementing account-driven enrollment:
+**Here’s why you should consider implementing account-driven enrollment:**
 
  🔒 Security - End-users are required to enter their own credentials instead of relying on a generic enrollment account.
  
@@ -17,7 +16,7 @@ Here’s why you should consider implementing account-driven enrollment:
  ⚙️ Compatibility - Vision Pro is landing soon in Europe, and today it can only be managed through account-driven enrollment. And more generally Apple is pushing towards ADUE for BYOD.
  
 
-Here are the components required to setup account-driven enrollment:
+**Here are the components required to setup account-driven enrollment:**
 
  - An MDM solution that supports account-driven enrollment
  - An Identity Provider (optional but recommended)
