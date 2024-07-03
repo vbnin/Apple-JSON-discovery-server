@@ -1,8 +1,44 @@
-# Apple JSON Discovery Server Setup Guide
+# New to Apple's account-driven enrollment concepts?
 
-This guide will help you prepare a Linux machine to set up a JSON Discovery Server for account-driven enrollment workflows using Apache and the files from this [GitHub project](https://github.com/vbnin/Apple-JSON-discovery-server).
+Apple's account-driven enrollment is a streamlined process that simplifies the setup and management of Apple devices that are already in production or not eligible to Apple's Automated Device Enrollment (ADE) program. 
 
-This guide is a proof of concept to showcase how Apple devices can be enrolled using the account-driven enrollment method. You should adapt it to your own environment.
+By utilizing Managed Apple IDs (or Accounts as Apple call them now), organizations can automate the enrollment of devices into their mobile device management (MDM) system. This process can be either used to enroll institutional devices (Account-driven DEVICE enrollment or ADDE) or to enroll personally owned devices (Account-driven USER enrollment or ADUE). 
+
+As of today, Apple is heavily pushing towards ADUE for any Bring Your Own Device (BYOD) enrollment workflows.
+
+Here’s why you should consider implementing account-driven enrollment:
+
+ 🔒 Security - End-users are required to enter their own credentials instead of relying on a generic enrollment account.
+ 
+ 😶‍🌫️ Privacy - Account-driven enrollment unlocks cryptographic separation of personal and professional data.
+ 
+ 🚀 Accessibility - Provide the best experience with a streamlined authentication process.
+ 
+ ⚙️ Compatibility - Vision Pro is landing soon in Europe, and today it can only be managed through account-driven enrollment. And more generally Apple is pushing towards ADUE for BYOD.
+ 
+
+Here are the components required to setup account-driven enrollment:
+
+ - An MDM solution that supports account-driven enrollment
+ - An Identity Provider (optional but recommended)
+ - An Apple Business Manager or Apple School Manager tenant
+ - Managed Apple IDs (or Accounts as Apple call them now)
+ - A domain name that you own
+ - A Service Discovery server that’ll return your MDM solution URL
+
+Find more information on how to set up account-driven enrollments using Jamf's Documentation Center:
+
+ - [Enrollment with Jamf Pro](https://learn.jamf.com/en-US/bundle/jamf-pro-documentation-current/page/Enrollment_into_Jamf_MDM.html)
+ - [Prepare for Account-Driven Enrollment with Managed Apple IDs and Service Discovery](https://learn.jamf.com/en-US/bundle/technical-articles/page/Prepare_for_Account-Driven_Enrollment_with_Managed_Apple_IDs_and_Service_Discovery.html)
+ - [Account-Driven User Enrollment Experience](https://learn.jamf.com/en-US/bundle/jamf-pro-documentation-current/page/Account-Driven_User_Enrollment_Experience_for_Personally_Owned_Mobile_Devices.html)
+
+# Apple Service Discovery Server Setup Guide
+
+This guide will help you build a Service Discovery Server for account-driven enrollment workflows using Apache and the files shared in this GitHub project.
+
+This guide is a proof of concept to showcase how you could enroll Apple devices either in ADDE or ADUE depending on their device type (Mac, iPhone, iPad, RealityDevice) by tweaking your Service Discovery server. You should adapt it to your own environment.
+
+More information on Apple Service Discovery servers [here](https://developer.apple.com/documentation/devicemanagement/discover_authentication_servers)
 
 ## Prerequisites
 
